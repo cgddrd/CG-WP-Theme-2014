@@ -1,0 +1,402 @@
+/*
+Theme Name: Connor Luke Goddard
+Theme URI: http://connorlukegoddard.com
+Description: The re-designed standard theme for Connor Luke Goddard.com
+Author: Connor Goddard
+Author URI: http://connorlukegoddard.com
+Version: 1.0
+Tags: responsive, white, connor, goddard
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('font/BebasNeue-webfont.eot');
+    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('font/BebasNeue-webfont.svg#bebas_neueregular') format('svg'), url('font/BebasNeue-webfont.woff') format('woff'), url('font/BebasNeue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('font/lato-reg-webfont.eot');
+    src: url('font/lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('font/lato-reg-webfont.svg#latoregular') format('svg'), url('font/lato-reg-webfont.woff') format('woff'), url('font/lato-reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #4c4c4c;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'latoregular', 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.3em;
+}
+a {
+    text-decoration: none;
+    color: #4c4c4c;
+}
+ul,
+ol,
+dl {
+    margin: 0;
+    padding: 0;
+}
+code {
+    font-family: 'Inconsolata', sans-serif;
+}
+#site-container {
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 30px 0;
+}
+#scroll-bar {
+    width: 2px;
+    height: 515px;
+    background-color: #ccc;
+    position: fixed;
+    margin-left: 255px;
+}
+#scroll-bar > span {
+    display: block;
+    background-color: #DD5424;
+    height: 100%;
+}
+#title-bar {
+    width: 230px;
+    text-align: center;
+    /* height: 620px; */
+    height: 520px;
+    margin-right: 20px;
+    position: fixed;
+    padding-right: 20px;
+    overflow: hidden;
+}
+#title-bar h2.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-weight: 400;
+}
+#title-bar h2.logo a {
+    color: #333;
+}
+#title-bar ul {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+#title-bar ul.social li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 0 5px;
+}
+#title-bar ul.social li:hover i {
+    color: #333;
+    color: #DD5424;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#title-bar ul.nav-menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+#title-bar ul.nav-menu li a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#title-bar ul.nav-menu li:hover a {
+    color: #DD5424;
+}
+#site-search label {
+    display: none;
+}
+input[type="text"],
+textarea {
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 8px 10px;
+    color: #4C4C4C;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    width: 195px;
+}
+textarea {
+    width: 422px;
+    margin-right: 100px;
+}
+input[type="submit"] {
+    background-color: #DD5424;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+#site-search input[type="submit"] {
+    display: none;
+}
+span.search-term {
+    background: #D3E18A;
+    font-weight: bold;
+}
+#main-content {
+    margin-left: 250px;
+    padding-left: 35px;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.blog-post {
+    margin-bottom: 10px;
+}
+.blog-post-content ul,
+.blog-post-content ol {
+    margin-left: 40px;
+}
+.blog-post-content li {
+    margin-bottom: 15px;
+}
+.blog-post-content a {
+    color: #DD5424;
+    text-decoration: underline;
+}
+a.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #DD5424;
+    font-size: 1.2em;
+}
+.single-post-heading {
+    margin-bottom: 20px;
+}
+.blog-heading h1 {
+    color: #4c4c4c;
+    padding: 10px 0;
+    font-size: 2.4em;
+}
+.blog-heading h3 {
+    color: #4c4c4c;
+    padding: 10px 0;
+}
+.blog-heading h3 a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.blog-heading h3 a:hover {
+    color: #DD5424;
+}
+.blog-heading a {
+    margin-right: 10px;
+}
+.blog-heading i {
+    margin-right: 4px;
+}
+.icon-background-grey {
+    color: #333;
+}
+#comments {
+    display: none;
+}
+#comment-intro h3 {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#comment-intro .icon-2x {
+    font-size: 1.8em;
+}
+ol.comment-list {
+    margin-bottom: 20px;
+}
+li.comment {
+    list-style-type: none;
+    padding: 20px 10px;
+}
+li.depth-1 {
+    margin-bottom: 10px;
+    border-left: solid 2px #DD5424;
+}
+li.comment > div {
+    background-color: #eee;
+    padding: 10px;
+}
+.comment-author {
+    font-size: 1.8em;
+}
+.comment-author img {
+    border-radius: 30px;
+}
+#comments label {
+    display: block;
+    margin-bottom: 10px;
+}
+form.comment-form {
+    overflow: hidden;
+}
+p.comment-form-author,
+p.comment-form-email,
+p.comment-form-url,
+p.comment-form-comment,
+p.form-submit {
+    float: left;
+    margin-right: 10px;
+}
+p.form-allowed-tags {
+    display: none;
+}
+blockquote > p {
+    font-style: italic;
+    font-weight: 600;
+    border-left: solid 2px #eee;
+    padding-left: 10px;
+}
+p.wp-caption-text {
+    border-left: solid 2px #eee;
+    font-style: italic;
+    padding-left: 10px;
+}
+a.comment-reply-link {
+    font-weight: bold;
+}
+div.aligncenter {
+    margin: 0 auto;
+}
+span.error-message {
+    color: #DD5424;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    #site-container {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 30px 0;
+        overflow: hidden;
+    }
+    #scroll-bar {
+        height: 400px;
+        /* margin-left: 220px; */
+        position: static;
+        margin-left: 0;
+        margin: 0 20px;
+        display: none;
+    }
+    #title-bar {
+        width: 100%;
+        height: 100%;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+    #title-bar ul.social li {
+        font-size: 25px;
+    }
+    #main-content {
+        padding: 0;
+        position: static;
+        margin-left: 0;
+        width: 438px;
+        width: 100%;
+    }
+    input[type="text"],
+    textarea {
+        width: auto;
+    }
+    #scroll-bar > span {
+        height: 100% !important;
+    }
+    .blog-heading h1 {
+        font-size: 2.2em;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    #site-container {
+        margin: 0 auto;
+        max-width: 680px;
+        padding: 30px 0;
+        overflow: hidden;
+    }
+    #scroll-bar {
+        height: 400px;
+        /* margin-left: 220px; */
+        float: left;
+        position: static;
+        margin-left: 0;
+        margin: 0 20px;
+    }
+    #title-bar {
+        width: 200px;
+        height: 100%;
+        float: left;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+    #title-bar ul.social li {
+        font-size: 25px;
+    }
+    #main-content {
+        padding: 0;
+        float: left;
+        position: static;
+        margin-left: 0;
+        width: 438px;
+    }
+    input[type="text"],
+    textarea {
+        width: auto;
+    }
+    #scroll-bar > span {
+        height: 100% !important;
+    }
+    .blog-heading h1 {
+        font-size: 2.2em;
+    }
+}

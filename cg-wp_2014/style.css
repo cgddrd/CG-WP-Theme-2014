@@ -1,0 +1,453 @@
+/*
+Theme Name: Connor Luke Goddard (2014)
+Theme URI: http://connorlukegoddard.com
+Description: The re-designed 2014 standard theme for connorlukegoddard.com
+Author: Connor Luke Goddard
+Author URI: http://connorlukegoddard.com
+Version: 1.2
+Tags: responsive, white, connor, goddard, luke
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('font/BebasNeue-webfont.eot');
+    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('font/BebasNeue-webfont.svg#bebas_neueregular') format('svg'), url('font/BebasNeue-webfont.woff') format('woff'), url('font/BebasNeue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('font/lato-reg-webfont.eot');
+    src: url('font/lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('font/lato-reg-webfont.svg#latoregular') format('svg'), url('font/lato-reg-webfont.woff') format('woff'), url('font/lato-reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #4c4c4c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'latoregular', 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal;
+    
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 2em;
+    padding: 10px 0;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+a {
+    text-decoration: none;
+    color: #4c4c4c;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #DD5424;
+}
+ul,
+ol,
+dl {
+    margin: 0;
+    padding: 0;
+}
+code,pre {
+    padding:2px;
+    background-color: #eee; 
+}
+#site-container {
+    margin: 0 auto;
+}
+#scroll-bar {
+    width: 2px;
+    height: 515px;
+    background-color: #ccc;
+    position: fixed;
+    margin-left: 255px;
+}
+#scroll-bar > span {
+    display: block;
+    background-color: #DD5424;
+    height: 100%;
+}
+#title-bar {
+    width: 100%;
+    text-align: center;
+    /* height: 620px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+#title-bar h2.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-weight: 400;
+}
+#title-bar h2.logo a {
+    color: #333;
+}
+#site-search label {
+    display: none;
+}
+input[type="text"],
+textarea {
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 8px 10px;
+    color: #4C4C4C;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    width: 195px;
+}
+textarea {
+    width: 422px;
+    margin-right: 100px;
+}
+input[type="submit"] {
+    background-color: #DD5424;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+#site-search input[type="submit"] {
+    display: none;
+}
+span.search-term {
+    background: #D3E18A;
+    font-weight: bold;
+}
+#main-content {
+    background-color: #fff;
+    overflow-x: hidden;
+    max-width: 60.361em;
+    padding: 140px 1.5em 1.5em 1.5em;
+    margin: 0 auto;
+}
+.blog-post {
+    margin-bottom: 10px;
+}
+.blog-post-content ul,
+.blog-post-content ol {
+    margin-left: 40px;
+}
+.blog-post-content li {
+    margin-bottom: 15px;
+}
+.blog-post-content a {
+    color: #DD5424;
+    text-decoration: underline;
+}
+a.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #DD5424;
+    font-size: 1.2em;
+}
+.single-post-heading {
+    margin-bottom: 20px;
+}
+.blog-heading h1 {
+    color: #4c4c4c;
+    padding: 10px 0;
+}
+.blog-heading h3 {
+    color: #4c4c4c;
+    padding: 10px 0;
+}
+.blog-heading h3 a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.blog-heading h3 a:hover {
+    color: #DD5424;
+}
+.blog-heading a {
+    margin-right: 10px;
+}
+.blog-heading i {
+    margin-right: 4px;
+}
+.icon-background-grey {
+    color: #333;
+}
+#comments {
+    display: none;
+}
+#comment-intro h3 {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#comment-intro .icon-2x {
+    font-size: 1.8em;
+}
+ol.comment-list {
+    margin-bottom: 20px;
+}
+li.comment {
+    list-style-type: none;
+    padding: 20px 10px;
+}
+li.depth-1 {
+    margin-bottom: 10px;
+    border-left: solid 2px #DD5424;
+}
+li.comment > div {
+    background-color: #eee;
+    padding: 10px;
+}
+.comment-author {
+    font-size: 1.8em;
+}
+.comment-author img {
+    border-radius: 30px;
+}
+#comments label {
+    display: block;
+    margin-bottom: 10px;
+}
+p.form-allowed-tags {
+    display: none;
+}
+blockquote > p {
+    font-style: italic;
+    font-weight: 600;
+    border-left: solid 2px #eee;
+    padding-left: 10px;
+}
+p.wp-caption-text {
+    border-left: solid 2px #eee;
+    font-style: italic;
+    padding-left: 10px;
+}
+a.comment-reply-link {
+    font-weight: bold;
+}
+div.aligncenter {
+    margin: 0 auto;
+}
+span.error-message {
+    color: #DD5424;
+}
+.comment-form label {
+    margin-right: 10px;
+}
+div.logo {
+    background-color: #000;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    float: left;
+}
+div.logo > a {
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    line-height: normal;
+    height: 60px;
+}
+div.logo span {
+    display: block;
+    background-color: #DD5424;
+    height: 100%;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+div.nav {
+    background-color: #eee;
+    height: 120px;
+    width: 551px;
+    margin-left: 3%;
+    float: left;
+    overflow: hidden;
+}
+div.nav > ul {
+    float: left;
+    height: 100%;
+    width: 150px;
+}
+div.nav li {
+    height: 33.33%;
+    vertical-align: middle;
+    line-height: 40px;
+    list-style-type: none;
+    position: relative;
+}
+div.nav li i {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+div.nav > ul.social-list {
+    width: 200px;
+    color: #fff;
+}
+ul.social-list li.twitter {
+    background-color: #55ACEE;
+}
+ul.social-list li.linkedin {
+    background-color: #007bb6;
+}
+ul.social-list li.github {
+    background-color: #666;
+}
+ul.social-list li.flickr {
+    background-color: #ff76bd;
+}
+ul.social-list li.mail {
+    background-color: #DD5424;
+}
+ul.social-list li.copyright {
+    color: #000;
+    font-size: 0.8em;
+}
+ul.social-list a {
+ color: #fff;   
+}
+#title-bar {
+    width: 100%;
+    position: fixed;
+}
+#title-inner {
+    background-color: #fff;
+    max-width: 60.361em;
+    padding: 0 1.5em 0.5em 1.5em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.blog-post.summary {
+    background-color: #FCFCFC;
+    padding: 10px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    #title-bar {
+        position: static;
+    }
+    div.logo {
+        height: 100px;
+        width: 100px;
+    }
+    div.logo > a {
+        font-size: 3.5em;
+        bottom: 0;
+        height: 52px;
+    }
+    div.nav {
+        height: 100px;
+        width: 165px;
+    }
+    div.nav li {
+        line-height: 31px;
+    }
+    div.nav li i {
+        position: static;
+        margin: 0 auto;
+    }
+    div.nav ul.nav-list {
+        width: 95px;
+    }
+    div.nav ul.nav-list li {
+        line-height: 34px;
+    }
+    div.nav ul.social-list {
+        width: 35px;
+    }
+    div.nav ul.social-list li {
+        line-height: 38px
+    }
+    li.copyright {
+        display: none;
+    }
+    #main-content {
+        padding-top: 0;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    #title-bar {
+        position: static;
+    }
+    div.logo {
+        height: 100px;
+        width: 100px;
+    }
+    div.logo > a {
+        font-size: 3.5em;
+        bottom: 0;
+    }
+    div.nav {
+        height: 100px;
+        width: 470px;
+    }
+    div.nav li {
+        line-height: 31px;
+    }
+    div.nav ul.social-list {
+        width: 160px;
+    }
+    #main-content {
+        padding-top: 0;
+    }
+}
